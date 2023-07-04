@@ -3,6 +3,10 @@ const dp = document.querySelector (".dp");
 const clickContainer = document.querySelector (".click_container");
 const safayetImage = document.querySelector (".safayet_img");
 
+dp.addEventListener ("click", function() {
+    clickContainer.style.opacity = 1;
+});
+
 //Nav indicator moving according to the click.
 const navUl = document.querySelector (".ul");
 const navLinks = Array.from (navUl.children);
