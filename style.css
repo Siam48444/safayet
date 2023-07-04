@@ -8,3 +8,12 @@
     user-select: none;
     scroll-behavior: smooth;
 }
+
+:root {
+    --background-color: #f8f9fa;
+    --font-color: #212529;
+}
+
+body {
+    background-color: var(--background-color);
+}
