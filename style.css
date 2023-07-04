@@ -58,6 +58,27 @@ body {
     cursor: pointer;
 }
 
+.click_container {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0 0 100% / 0.2);
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+    z-index: 5;
+    opacity: 0;
+    transition: opacity 300ms;
+}
+
+.safayet_img {
+    position: absolute;
+    width: 300px;
+    border-radius: 10px;
+}
+
 .name_and_bio {
     display: flex;
     flex-direction: column;
@@ -119,6 +140,7 @@ body {
     justify-content: space-between;
     padding: 0.2em 0.5em;
     position: relative;
+    background-color: var(--background-color);
 }
 
 .indicator {
