@@ -12,8 +12,47 @@
 :root {
     --background-color: #f8f9fa;
     --font-color: #212529;
+    --box-shadow: 0 3px 5px rgba(0, 0, 0, 0.151), 0 4px 10px rgba(0, 0, 0, 0.075);
 }
 
 body {
     background-color: var(--background-color);
+    font-size: 62.5%;
+}
+
+.container {
+    margin: 12em auto;
+    width: 20em;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+}
+
+.basic_info {
+    width: 100%;
+    background-color: var(--background-color);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.dp {
+    width: 90px;
+    height: 90px;
+    background-image: url(images/safayet.jpg);
+    background-size: cover;
+    position: absolute;
+    border-radius: 50%;
+    top: -40%;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    border: var(--font-color) 0.5px solid;
+    box-shadow: var(--box-shadow);
+}
+
+.more_info {
+    width: 100%;
 }
