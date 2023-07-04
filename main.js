@@ -1,4 +1,7 @@
-
+//Profile Picture appering after clicking on it.
+const dp = document.querySelector (".dp");
+const clickContainer = document.querySelector (".click_container");
+const safayetImage = document.querySelector (".safayet_img");
 
 //Nav indicator moving according to the click.
 const navUl = document.querySelector (".ul");
