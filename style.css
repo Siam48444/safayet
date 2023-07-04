@@ -55,6 +55,7 @@ body {
     transform: translateX(-50%);
     border: var(--font-color) 0.2px solid;
     box-shadow: var(--box-shadow);
+    cursor: pointer;
 }
 
 .name_and_bio {
@@ -109,7 +110,33 @@ body {
     border-radius: 10px;
     box-shadow: var(--box-shadow);
     position: relative;
-    display: flex;
-    justify-content: center;
     padding: 1em;
+}
+
+.more_info ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.2em 0.5em;
+    position: relative;
+}
+
+.indicators {
+    position: absolute;
+    background-color: var(--font-color);
+    border-radius: 20px;
+    width: 5em;
+    height: 0.15em;
+    bottom: 0;
+    left: 0;
+    transform: translateX(0.4em);
+
+}
+
+.more_info li {
+    list-style: none;
+    font-size: 0.6rem;
+    font-weight: 500;
+    color: var(--font-color);
+    cursor: pointer;
 }
