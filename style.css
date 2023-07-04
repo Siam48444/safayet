@@ -121,7 +121,7 @@ body {
     position: relative;
 }
 
-.indicators {
+.indicator {
     position: absolute;
     background-color: var(--font-color);
     border-radius: 20px;
@@ -130,7 +130,7 @@ body {
     bottom: 0;
     left: 0;
     transform: translateX(0.4em);
-
+    transition: transform 300ms;
 }
 
 .more_info li {
