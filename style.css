@@ -77,6 +77,7 @@ body {
     position: absolute;
     width: 300px;
     border-radius: 10px;
+    transition: opacity 300ms, transform 300ms;
 }
 
 .name_and_bio {
