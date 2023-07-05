@@ -27,17 +27,44 @@ const indicator = document.querySelector (".indicator");
 
 navLinks[1].addEventListener ("click", () => {
     indicator.style.transform = "translateX(0.4em)";
-    indicator.style.width = "5em";
+    indicator.style.width = "5.8em";
+    indicator.style.opacity = "1";
 });
 
 navLinks[2].addEventListener ("click", () => {
     indicator.style.transform = "translateX(10em)";
-    indicator.style.width = "4.5em";
+    indicator.style.width = "4.7em";
+    indicator.style.opacity = "1";
 });
 
 navLinks[3].addEventListener ("click", () => {
-    indicator.style.transform = "translateX(19.15em)";
-    indicator.style.width = "3.5em";
+    indicator.style.transform = "translateX(18.8em)";
+    indicator.style.width = "3.9em";
+    indicator.style.opacity = "1";
 });
+
+//Nav svg animation.
+const address = document.querySelector (".address_svg");
+const education = document.querySelector (".education_svg");
+const others = document.querySelector (".others_svg");
+navLinks[1].addEventListener ("click", () => {
+    education.style.opacity = "1";
+    others.style.opacity = "0.3";
+    address.style.opacity = "0.3";
+});
+
+navLinks[2].addEventListener ("click", () => {
+    address.style.opacity = "1";
+    education.style.opacity = "0.3";
+    others.style.opacity = "0.3";
+});
+
+navLinks[3].addEventListener ("click", () => {
+    others.style.opacity = "1";
+    education.style.opacity = "0.3";
+    address.style.opacity = "0.3";
+});
+
+
 
 console.log();
