@@ -145,13 +145,16 @@ body {
     padding: 1em;
 }
 
+.more_info header nav {
+    background-color: var(--background-color);
+}
+
 .more_info ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0.2em 0.5em;
     position: relative;
-    background-color: var(--background-color);
 }
 
 .indicator {
@@ -189,4 +192,26 @@ body {
 
 .address_svg {
     transform: scale(0.9);
+}
+
+.infos {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    transition: position 300ms;
+}
+
+.education {
+    background-color: red;
+    height: 8em;
+}
+
+.address {
+    background-color: green;
+    height: 8em;
+}
+
+.others {
+    background-color: yellow;
+    height: 8em;
 }
