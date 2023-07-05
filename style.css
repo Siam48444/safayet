@@ -1,70 +1,192 @@
-//Profile Picture appering after clicking on it.
-const dp = document.querySelector (".dp");
-const clickContainer = document.querySelector (".click_container");
-const safayetImage = document.querySelector (".safayet_img");
-const backButton = document.querySelector (".arrow_left"); 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-clickContainer.style.pointerEvents = "none";
-clickContainer.style.opacity = "0";
-backButton.style.transform = "translateX(-100%)";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+    user-select: none;
+    scroll-behavior: smooth;
+}
 
-dp.addEventListener ("click", () => {
-    clickContainer.style.opacity = 1;
-    clickContainer.style.pointerEvents = "all";
-    backButton.style.transform = "translateX(0)";
-});
+:root {
+    --background-color: #f8f9fa;
+    --font-color: #212529;
+    --box-shadow: 0 3px 5px rgba(0, 0, 0, 0.089), 0 4px 10px rgba(0, 0, 0, 0.11);
+}
 
-backButton.addEventListener ("click", () => {
-    clickContainer.style.opacity = "0";
-    clickContainer.style.pointerEvents = "none";
-    backButton.style.transform = "translateX(-100%)";
-});
+body {
+    background-color: var(--background-color);
+    font-size: 62.5%;
+}
 
-//Nav indicator moving according to the click.
-const navUl = document.querySelector (".ul");
-const navLinks = Array.from (navUl.children);
-const indicator = document.querySelector (".indicator");
+.container {
+    margin: 11em auto;
+    width: 25em;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    gap: 1em;
+}
 
-navLinks[1].addEventListener ("click", () => {
-    indicator.style.transform = "translateX(0.4em)";
-    indicator.style.width = "5.8em";
-    indicator.style.opacity = "1";
-});
+.basic_info {
+    width: 100%;
+    height: 17em;
+    background-color: var(--background-color);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6em 2em 0 2em;
+}
 
-navLinks[2].addEventListener ("click", () => {
-    indicator.style.transform = "translateX(10em)";
-    indicator.style.width = "4.7em";
-    indicator.style.opacity = "1";
-});
+.dp {
+    width: 90px;
+    height: 90px;
+    background-image: url(images/safayet.jpg);
+    background-size: cover;
+    position: absolute;
+    border-radius: 50%;
+    top: -27%;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    border: var(--font-color) 1px solid;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+}
 
-navLinks[3].addEventListener ("click", () => {
-    indicator.style.transform = "translateX(18.8em)";
-    indicator.style.width = "3.9em";
-    indicator.style.opacity = "1";
-});
+.click_container {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+    z-index: 5;
+    transition: opacity 300ms;
+}
 
-//Nav svg animation.
-const address = document.querySelector (".address_svg");
-const education = document.querySelector (".education_svg");
-const others = document.querySelector (".others_svg");
-navLinks[1].addEventListener ("click", () => {
-    education.style.opacity = "1";
-    others.style.opacity = "0.3";
-    address.style.opacity = "0.3";
-});
+.click_container svg {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    fill: var(--font-color);
+    top: 2em;
+    left: 2em;
+    cursor: pointer;
+    transition: transform 300ms;
+}
 
-navLinks[2].addEventListener ("click", () => {
-    address.style.opacity = "1";
-    education.style.opacity = "0.3";
-    others.style.opacity = "0.3";
-});
+.safayet_img {
+    position: absolute;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    transition: opacity 300ms, transform 300ms;
+}
 
-navLinks[3].addEventListener ("click", () => {
-    others.style.opacity = "1";
-    education.style.opacity = "0.3";
-    address.style.opacity = "0.3";
-});
+.name_and_bio {
+    display: flex;
+    flex-direction: column;
+}
 
+.name {
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin: auto;
+    color: var(--font-color);
+}
 
+.bio {
+    margin: auto;
+    font-size: 0.5rem;
+    font-weight: 400;
+    color: var(--font-color);
+}
 
-console.log();
+.social_info {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: auto;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.socials a {
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: 0.4rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.socials svg {
+    height: 15px;
+    width: 15px;
+    fill: var(--font-color);
+}
+
+.more_info {
+    width: 100%;
+    background-color: var(--background-color);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    position: relative;
+    padding: 1em;
+}
+
+.more_info ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.2em 0.5em;
+    position: relative;
+    background-color: var(--background-color);
+}
+
+.indicator {
+    position: absolute;
+    background-color: var(--font-color);
+    border-radius: 20px;
+    width: 5em;
+    height: 0.15em;
+    bottom: 0;
+    left: 0;
+    transform: translateX(0.4em);
+    transition: transform 300ms, width 200ms, opacity 300ms;
+    opacity: 0;
+}
+
+.more_info li {
+    list-style: none;
+    font-size: 0.5rem;
+    font-weight: 500;
+    color: var(--font-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.more_info li svg {
+    height: 10px;
+    width: 10px;
+    fill: var(--font-color);
+    opacity: 0.3;
+    transition: opacity 300ms;
+}
+
+.address_svg {
+    transform: scale(0.9);
+}
