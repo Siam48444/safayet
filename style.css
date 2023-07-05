@@ -253,3 +253,16 @@ body {
 .others {
     height: 8em;
 }
+
+.dark_light {
+    fill: var(--font-color);
+    position: absolute;
+    top: 2em;
+    right: 2em;
+    width: 15px;
+    height: 15px;
+}
+
+.light, .dark {
+    position: absolute;
+}
