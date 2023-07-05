@@ -72,9 +72,19 @@ body {
     transition: opacity 300ms;
 }
 
+.click_container svg {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    fill: var(--font-color);
+    top: 2em;
+    left: 2em;
+    cursor: pointer;
+}
+
 .safayet_img {
     position: absolute;
-    width: 90%;
+    width: 300px;
     border-radius: 10px;
     box-shadow: var(--box-shadow);
     transition: opacity 300ms, transform 300ms;
