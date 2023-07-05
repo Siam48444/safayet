@@ -26,20 +26,17 @@ const navLinks = Array.from (navUl.children);
 const indicator = document.querySelector (".indicator");
 
 navLinks[1].addEventListener ("click", () => {
-    indicator.style.transform = "translateX(0.4em)";
-    indicator.style.width = "5.8em";
+    indicator.style.transform = "translateX(3.5em)";
     indicator.style.opacity = "1";
 });
 
 navLinks[2].addEventListener ("click", () => {
-    indicator.style.transform = "translateX(10em)";
-    indicator.style.width = "4.7em";
+    indicator.style.transform = "translateX(12.5em)";
     indicator.style.opacity = "1";
 });
 
 navLinks[3].addEventListener ("click", () => {
-    indicator.style.transform = "translateX(18.8em)";
-    indicator.style.width = "3.9em";
+    indicator.style.transform = "translateX(20.8em)";
     indicator.style.opacity = "1";
 });
 
