@@ -163,10 +163,10 @@ body {
 .indicator {
     position: absolute;
     background-color: var(--font-color);
-    border-radius: 20px;
-    width: 5em;
-    height: 0.1em;
-    bottom: 0;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    bottom: -0.3em;
     left: 0;
     transform: translateX(0.4em);
     transition: transform 300ms, width 200ms, opacity 300ms;
