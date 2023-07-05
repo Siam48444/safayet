@@ -164,8 +164,8 @@ body {
     position: absolute;
     background-color: var(--font-color);
     border-radius: 50%;
-    width: 5px;
-    height: 5px;
+    width: 4px;
+    height: 4px;
     bottom: -0.3em;
     left: 0;
     transform: translateX(0.4em);
