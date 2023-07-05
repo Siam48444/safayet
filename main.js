@@ -65,6 +65,36 @@ navLinks[3].addEventListener ("click", () => {
     address.style.opacity = "0.3";
 });
 
+//Infos popping up by clicking on the navigations.
+const addressBox = document.querySelector (".address");
+const educationBox = document.querySelector (".education"); 
+const othersBox = document.querySelector (".others"); 
 
+navLinks[1].addEventListener ("click", () => {
+    educationBox.style.position = "relative";
+    educationBox.style.opacity = "1";
+    addressBox.style.position = "absolute";
+    addressBox.style.opacity = "0";
+    othersBox.style.position = "absolute";
+    othersBox.style.opacity = "0";
+});
+
+navLinks[2].addEventListener ("click", () => {
+    addressBox.style.position = "relative";
+    addressBox.style.opacity = "1";
+    othersBox.style.position = "absolute";
+    othersBox.style.opacity = "0";
+    educationBox.style.position = "absolute";
+    educationBox.style.opacity = "0";
+});
+
+navLinks[3].addEventListener ("click", () => {
+    othersBox.style.position = "relative";
+    othersBox.style.opacity = "1";
+    addressBox.style.position = "absolute";
+    addressBox.style.opacity = "0";
+    educationBox.style.position = "absolute";
+    educationBox.style.opacity = "0";
+});
 
 console.log();
