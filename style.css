@@ -13,6 +13,7 @@
     --background-color: #f8f9fa;
     --font-color: #212529;
     --box-shadow: 0 3px 5px rgba(0, 0, 0, 0.089), 0 4px 10px rgba(0, 0, 0, 0.11);
+    --link-color: #045bad;
 }
 
 body {
@@ -202,16 +203,50 @@ body {
 }
 
 .education {
-    background-color: red;
-    height: 8em;
+    padding: 1em 0.5em;
+    height: 10em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.school_college {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.link_text {
+    font-size: 0.45rem;
+    font-weight: 300;
+    text-decoration: underline;
+    color: var(--link-color);
+    cursor: pointer;
+}
+
+.links h3 {
+    color: var(--font-color);
+    font-size: 0.5rem;
+    font-weight: 600;
+}
+
+.school_college > p {
+    color: var(--font-color);
+    font-size: 0.5rem;
+    font-weight: 300;
 }
 
 .address {
-    background-color: green;
     height: 8em;
 }
 
 .others {
-    background-color: yellow;
     height: 8em;
 }
