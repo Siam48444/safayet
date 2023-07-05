@@ -14,6 +14,7 @@
     --font-color: #212529;
     --box-shadow: 0 3px 5px rgba(0, 0, 0, 0.089), 0 4px 10px rgba(0, 0, 0, 0.11);
     --link-color: #045bad;
+    --border: #21252950;
 }
 
 body {
@@ -35,7 +36,7 @@ body {
     height: 17em;
     background-color: var(--background-color);
     border-radius: 10px;
-    border: var(--font-color) 0.5px solid;
+    border: var(--border) 0.5px solid;
     box-shadow: var(--box-shadow);
     position: relative;
     display: flex;
@@ -55,7 +56,7 @@ body {
     left: 50%;
     right: 50%;
     transform: translateX(-50%);
-    border: var(--font-color) 0.5px solid;
+    border: var(--border) 0.5px solid;
     box-shadow: var(--box-shadow);
     cursor: pointer;
 }
@@ -145,7 +146,7 @@ body {
     box-shadow: var(--box-shadow);
     position: relative;
     padding: 1em;
-    border: solid var(--font-color) 0.5px;
+    border: solid var(--border) 0.5px;
 }
 
 .more_info header nav {
