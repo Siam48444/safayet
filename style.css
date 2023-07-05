@@ -12,7 +12,7 @@
 :root {
     --background-color: #f8f9fa;
     --font-color: #212529;
-    --box-shadow: 0 3px 5px rgba(0, 0, 0, 0.178), 0 4px 10px rgba(0, 0, 0, 0.11);
+    --box-shadow: 0 3px 5px rgba(0, 0, 0, 0.089), 0 4px 10px rgba(0, 0, 0, 0.11);
 }
 
 body {
@@ -21,7 +21,7 @@ body {
 }
 
 .container {
-    margin: 13em auto;
+    margin: 11em auto;
     width: 25em;
     display: flex;
     flex-direction: column;
@@ -53,7 +53,7 @@ body {
     left: 50%;
     right: 50%;
     transform: translateX(-50%);
-    border: var(--font-color) 0.2px solid;
+    border: var(--font-color) 1px solid;
     box-shadow: var(--box-shadow);
     cursor: pointer;
 }
@@ -68,7 +68,6 @@ body {
     height: 100%;
     backdrop-filter: blur(3px);
     z-index: 5;
-    opacity: 0;
     transition: opacity 300ms;
 }
 
@@ -80,6 +79,7 @@ body {
     top: 2em;
     left: 2em;
     cursor: pointer;
+    transition: transform 300ms;
 }
 
 .safayet_img {
