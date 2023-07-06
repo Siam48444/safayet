@@ -130,6 +130,11 @@ const p13 = document.querySelector ("#p13");
 const p14 = document.querySelector ("#p14");
 const p15 = document.querySelector ("#p15");
 const p16 = document.querySelector ("#p16");
+const svg1 = document.querySelector (".svg1");
+const svg2 = document.querySelector (".svg2");
+const svg3 = document.querySelector (".svg3");
+const svg4 = document.querySelector (".svg4");
+const svg5 = document.querySelector (".svg5");
 
 light.style.opacity = "0";
 light.style.pointerEvents = "none";
@@ -145,6 +150,27 @@ light.addEventListener ("click", () => {
     backButton.style.fill = "#212529";
     basicBox.style.backgroundColor = "#393f44";
     moreBox.style.backgroundColor = "#393f44";
+
+    p1.style.color = ("#212529");
+    p2.style.color = ("#212529");
+    p3.style.color = ("#212529");
+    p4.style.color = ("#212529");
+    p5.style.color = ("#212529");
+    p6.style.color = ("#212529");
+    p7.style.color = ("#212529");
+    p8.style.color = ("#212529");
+    p10.style.color = ("#212529");
+    p11.style.color = ("#212529");
+    p13.style.color = ("#212529");
+    p14.style.color = ("#212529");
+    p16.style.color = ("#212529");
+
+    indicator.style.backgroundColor = ("#212529");
+    svg1.style.fill = ("#212529");
+    svg2.style.fill = ("#212529");
+    svg3.style.fill = ("#212529");
+    svg4.style.fill = ("#212529");
+    svg5.style.fill = ("#212529");
 });
 
 dark.addEventListener ("click", () => {
@@ -169,13 +195,21 @@ dark.addEventListener ("click", () => {
     p6.style.color = ("#f8f9fa");
     p7.style.color = ("#f8f9fa");
     p8.style.color = ("#f8f9fa");
-    p9.style.color = ("#f8f9fa");
     p10.style.color = ("#f8f9fa");
     p11.style.color = ("#f8f9fa");
-    p12.style.color = ("#f8f9fa");
     p13.style.color = ("#f8f9fa");
     p14.style.color = ("#f8f9fa");
-    p15.style.color = ("#f8f9fa");
     p16.style.color = ("#f8f9fa");
+
+    indicator.style.backgroundColor = ("#f8f9fa");
+    svg1.style.fill = ("#f8f9fa");
+    svg2.style.fill = ("#f8f9fa");
+    svg3.style.fill = ("#f8f9fa");
+    svg4.style.fill = ("#f8f9fa");
+    svg5.style.fill = ("#f8f9fa");
+
+    education.addEventListener ("click", () => {
+        svg3.style.fill = ("#f8f9fa");
+    });
 });
 
