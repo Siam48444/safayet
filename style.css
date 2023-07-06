@@ -15,6 +15,8 @@
     --box-shadow: 0 3px 5px rgba(0, 0, 0, 0.089), 0 4px 10px rgba(0, 0, 0, 0.11);
     --link-color: #045bad;
     --border: #21252950;
+    --dark: #212529;
+    --white: #f8f9fa;
 }
 
 body {
@@ -265,4 +267,5 @@ body {
 
 .light, .dark {
     position: absolute;
+    cursor: pointer;
 }
