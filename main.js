@@ -9,15 +9,29 @@ clickContainer.style.opacity = "0";
 backButton.style.transform = "translateX(-100%)";
 
 dp.addEventListener ("click", () => {
-    clickContainer.style.opacity = 1;
+    clickContainer.style.opacity = "1";
     clickContainer.style.pointerEvents = "all";
     backButton.style.transform = "translateX(0)";
+    safayetImage.style.opacity = "1";
+    collegeImage.style.opacity = "0";
 });
 
 backButton.addEventListener ("click", () => {
     clickContainer.style.opacity = "0";
     clickContainer.style.pointerEvents = "none";
-    backButton.style.transform = "translateX(-100%)";
+    backButton.style.transform = "translateX(-120%)";
+});
+
+//College picture appearing after clicking on the link.
+const collegeImage = document.querySelector (".college_img");
+const linkCollege = document.querySelector (".link_college");
+
+linkCollege.addEventListener ("click", () => {
+    clickContainer.style.opacity = "1";
+    clickContainer.style.pointerEvents = "all";
+    backButton.style.transform = "translateX(0)";
+    safayetImage.style.opacity = "0";
+    collegeImage.style.opacity = "1";
 });
 
 //Nav indicator moving according to the click.
@@ -133,6 +147,3 @@ dark.addEventListener ("click", () => {
     moreBox.style.backgroundColor = "#282c30";
 });
 
-
-
-console.log();
