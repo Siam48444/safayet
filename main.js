@@ -98,6 +98,9 @@ navLinks[3].addEventListener ("click", () => {
 const dark = document.querySelector (".dark");
 const light = document.querySelector (".light");
 const body = document.querySelector ("body");
+const basicBox = document.querySelector (".basic_info");
+const moreBox = document.querySelector (".more_info");
+const texts = document.querySelectorAll (".lightToDark");
 
 light.style.opacity = "0";
 light.style.pointerEvents = "none";
@@ -109,6 +112,8 @@ light.addEventListener ("click", () => {
 
     body.style.backgroundColor = "#f8f9fa";
     backButton.style.fill = "#212529";
+    basicBox.style.backgroundColor = "#f8f9fa";
+    moreBox.style.backgroundColor = "#f8f9fa";
 });
 
 dark.addEventListener ("click", () => {
@@ -120,6 +125,11 @@ dark.addEventListener ("click", () => {
 
     body.style.backgroundColor = "#212529";
     backButton.style.fill = "#f8f9fa";
+    basicBox.style.backgroundColor = "#282c30";
+    moreBox.style.backgroundColor = "#282c30";
+    texts.forEach(() => {
+        texts.style.color = "#f8f9fa";
+    });
 }) ;
 
 
