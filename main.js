@@ -107,6 +107,8 @@ light.style.pointerEvents = "none";
 light.addEventListener ("click", () => {
     light.style.opacity = "0";
     light.style.pointerEvents = "none";
+    light.style.transform = "rotate(360deg)";
+    dark.style.transform = "rotate(360deg)";
     dark.style.pointerEvents = "all";
     dark.style.opacity = "1";
 
@@ -119,6 +121,8 @@ light.addEventListener ("click", () => {
 dark.addEventListener ("click", () => {
     dark.style.opacity = "0";
     dark.style.pointerEvents = "none";
+    dark.style.transform = "rotate(-360deg)";
+    light.style.transform = "rotate(-360deg)";
     light.style.pointerEvents = "all";
     light.style.opacity = "1";
     light.style.fill = "#f8f9fa";
@@ -127,10 +131,7 @@ dark.addEventListener ("click", () => {
     backButton.style.fill = "#f8f9fa";
     basicBox.style.backgroundColor = "#282c30";
     moreBox.style.backgroundColor = "#282c30";
-    texts.forEach(() => {
-        texts.style.color = "#f8f9fa";
-    });
-}) ;
+});
 
 
 
