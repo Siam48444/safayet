@@ -53,7 +53,7 @@ body {
 .dp {
     width: 90px;
     height: 90px;
-    background-image: url(images/safayet.jpg);
+    background-image: url(images/safayet.jp);
     background-size: cover;
     position: absolute;
     border-radius: 50%;
@@ -261,12 +261,12 @@ body {
     position: absolute;
     top: 2em;
     right: 2em;
-    width: 15px;
-    height: 15px;
+    width: 18px;
+    height: 18px;
 }
 
 .light, .dark {
     position: absolute;
     cursor: pointer;
-    transition: transform 500ms, opacity 500ms, fill 500ms;
+    transition: transform 1000ms, opacity 500ms, fill 500ms;
 }
