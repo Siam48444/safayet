@@ -95,7 +95,15 @@ body {
     width: 300px;
     border-radius: 10px;
     box-shadow: var(--box-shadow);
-    transition: opacity 300ms, transform 300ms;
+    transition: transform 300ms;
+}
+
+.college_img {
+    position: absolute;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    transition: transform 300ms;
 }
 
 .name_and_bio {
