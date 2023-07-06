@@ -144,6 +144,10 @@ body {
     font-size: 0.4rem;
     font-weight: 400;
     cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .socials svg {
