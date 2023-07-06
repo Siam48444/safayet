@@ -114,7 +114,22 @@ const light = document.querySelector (".light");
 const body = document.querySelector ("body");
 const basicBox = document.querySelector (".basic_info");
 const moreBox = document.querySelector (".more_info");
-const texts = document.querySelectorAll (".lightToDark");
+const p1 = document.querySelector ("#p1");
+const p2 = document.querySelector ("#p2");
+const p3 = document.querySelector ("#p3");
+const p4 = document.querySelector ("#p4");
+const p5 = document.querySelector ("#p5");
+const p6 = document.querySelector ("#p6");
+const p7 = document.querySelector ("#p7");
+const p8 = document.querySelector ("#p8");
+const p9 = document.querySelector ("#p9");
+const p10 = document.querySelector ("#p10");
+const p11 = document.querySelector ("#p11");
+const p12 = document.querySelector ("#p12");
+const p13 = document.querySelector ("#p13");
+const p14 = document.querySelector ("#p14");
+const p15 = document.querySelector ("#p15");
+const p16 = document.querySelector ("#p16");
 
 light.style.opacity = "0";
 light.style.pointerEvents = "none";
@@ -145,5 +160,22 @@ dark.addEventListener ("click", () => {
     backButton.style.fill = "#f8f9fa";
     basicBox.style.backgroundColor = "#282c30";
     moreBox.style.backgroundColor = "#282c30";
+    
+    p1.style.color = ("#f8f9fa");
+    p2.style.color = ("#f8f9fa");
+    p3.style.color = ("#f8f9fa");
+    p4.style.color = ("#f8f9fa");
+    p5.style.color = ("#f8f9fa");
+    p6.style.color = ("#f8f9fa");
+    p7.style.color = ("#f8f9fa");
+    p8.style.color = ("#f8f9fa");
+    p9.style.color = ("#f8f9fa");
+    p10.style.color = ("#f8f9fa");
+    p11.style.color = ("#f8f9fa");
+    p12.style.color = ("#f8f9fa");
+    p13.style.color = ("#f8f9fa");
+    p14.style.color = ("#f8f9fa");
+    p15.style.color = ("#f8f9fa");
+    p16.style.color = ("#f8f9fa");
 });
 
