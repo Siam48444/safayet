@@ -94,4 +94,34 @@ navLinks[3].addEventListener ("click", () => {
     educationBox.style.opacity = "0";
 });
 
+//Switching to dark and light mode.
+const dark = document.querySelector (".dark");
+const light = document.querySelector (".light");
+const body = document.querySelector ("body");
+
+light.style.opacity = "0";
+light.style.pointerEvents = "none";
+light.addEventListener ("click", () => {
+    light.style.opacity = "0";
+    light.style.pointerEvents = "none";
+    dark.style.pointerEvents = "all";
+    dark.style.opacity = "1";
+
+    body.style.backgroundColor = "#f8f9fa";
+    backButton.style.fill = "#212529";
+});
+
+dark.addEventListener ("click", () => {
+    dark.style.opacity = "0";
+    dark.style.pointerEvents = "none";
+    light.style.pointerEvents = "all";
+    light.style.opacity = "1";
+    light.style.fill = "#f8f9fa";
+
+    body.style.backgroundColor = "#212529";
+    backButton.style.fill = "#f8f9fa";
+}) ;
+
+
+
 console.log();
