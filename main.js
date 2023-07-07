@@ -148,8 +148,8 @@ light.addEventListener ("click", () => {
 
     body.style.backgroundColor = "#f8f9fa";
     backButton.style.fill = "#212529";
-    basicBox.style.backgroundColor = "#393f44";
-    moreBox.style.backgroundColor = "#393f44";
+    basicBox.style.backgroundColor = "#f8f9fa";
+    moreBox.style.backgroundColor = "#f8f9fa";
 
     p1.style.color = ("#212529");
     p2.style.color = ("#212529");
