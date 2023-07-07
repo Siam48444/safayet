@@ -23,10 +23,10 @@
 .overlay {
     position: absolute;
     width: 100vw;
-    height: 100vh;
+    height: 200vh;
     background-color: var(--background-color);
     z-index: 999;
-    transform: translateY(-10em);
+    transform: translateY(-50em);
     margin: 0;
     padding: 0;
     animation: overlayIn 2s forwards ease-out;
