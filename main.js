@@ -54,28 +54,6 @@ navLinks[3].addEventListener ("click", () => {
     indicator.style.opacity = "1";
 });
 
-//Nav svg animation.
-const address = document.querySelector (".address_svg");
-const education = document.querySelector (".education_svg");
-const others = document.querySelector (".others_svg");
-navLinks[1].addEventListener ("click", () => {
-    education.style.opacity = "1";
-    others.style.opacity = "0.3";
-    address.style.opacity = "0.3";
-});
-
-navLinks[2].addEventListener ("click", () => {
-    address.style.opacity = "1";
-    education.style.opacity = "0.3";
-    others.style.opacity = "0.3";
-});
-
-navLinks[3].addEventListener ("click", () => {
-    others.style.opacity = "1";
-    education.style.opacity = "0.3";
-    address.style.opacity = "0.3";
-});
-
 //Infos popping up by clicking on the navigations.
 const addressBox = document.querySelector (".address");
 const educationBox = document.querySelector (".education"); 
