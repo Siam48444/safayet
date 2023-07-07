@@ -152,10 +152,6 @@ body {
     font-size: 0.4rem;
     font-weight: 400;
     cursor: pointer;
-
-    &:hover {
-        text-decoration: underline;
-    }
 }
 
 .socials svg {
@@ -214,10 +210,6 @@ body {
     fill: var(--font-color);
     opacity: 0.3;
     transition: opacity 300ms;
-}
-
-.address_svg {
-    transform: scale(0.9);
 }
 
 .infos {
@@ -289,4 +281,24 @@ body {
     position: absolute;
     cursor: pointer;
     transition: transform 1000ms, opacity 500ms, fill 500ms;
+}
+
+.address {
+    padding: 1em 0.5em;
+    height: 7em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.address h3 {
+    color: var(--font-color);
+    font-size: 0.5rem;
+    font-weight: 600;
+}
+
+.address p {
+    color: var(--font-color);
+    font-size: 0.5rem;
+    font-weight: 400;
 }
