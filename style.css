@@ -20,10 +20,30 @@
     --dark2: #393f44;
 }
 
+.overlay {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-color);
+    z-index: 999;
+    transform: translateY(-10em);
+    margin: 0;
+    padding: 0;
+    animation: overlayIn 2s forwards ease-out;
+}
+
+@keyframes overlayIn {
+    100% {
+        pointer-events: none;
+        height: 0vh;
+    }
+}
+
 body {
     background-color: var(--background-color);
     font-size: 62.5%;
     transition: background-color 500ms;
+    overflow-x: hidden;
 }
 
 .container {
@@ -72,8 +92,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     backdrop-filter: blur(3px);
     z-index: 5;
     transition: opacity 300ms;
