@@ -128,6 +128,10 @@ const svg2 = document.querySelector (".svg2");
 const svg3 = document.querySelector (".svg3");
 const svg4 = document.querySelector (".svg4");
 const svg5 = document.querySelector (".svg5");
+const address1 = document.querySelector (".address1");
+const address2 = document.querySelector (".address2");
+const address3 = document.querySelector (".address3");
+const address4 = document.querySelector (".address4");
 
 light.style.opacity = "0";
 light.style.pointerEvents = "none";
@@ -157,6 +161,11 @@ light.addEventListener ("click", () => {
     p13.style.color = ("#212529");
     p14.style.color = ("#212529");
     p16.style.color = ("#212529");
+
+    address1.style.color = "#212529";
+    address2.style.color = "#212529";
+    address3.style.color = "#212529";
+    address4.style.color = "#212529";
 
     indicator.style.backgroundColor = ("#212529");
     svg1.style.fill = ("#212529");
@@ -201,8 +210,9 @@ dark.addEventListener ("click", () => {
     svg4.style.fill = ("#f8f9fa");
     svg5.style.fill = ("#f8f9fa");
 
-    education.addEventListener ("click", () => {
-        svg3.style.fill = ("#f8f9fa");
-    });
+    address1.style.color = "#f8f9fa";
+    address2.style.color = "#f8f9fa";
+    address3.style.color = "#f8f9fa";
+    address4.style.color = "#f8f9fa";
 });
 
