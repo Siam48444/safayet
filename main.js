@@ -13,6 +13,7 @@ dp.addEventListener ("click", () => {
     clickContainer.style.pointerEvents = "all";
     backButton.style.transform = "translateX(0)";
     safayetImage.style.opacity = "1";
+    momenaImage.style.opacity = "0";
     collegeImage.style.opacity = "0";
 });
 
@@ -31,7 +32,21 @@ linkCollege.addEventListener ("click", () => {
     clickContainer.style.pointerEvents = "all";
     backButton.style.transform = "translateX(0)";
     safayetImage.style.opacity = "0";
+    momenaImage.style.opacity = "0";
     collegeImage.style.opacity = "1";
+});
+
+//Momena picture appearing after clicking on the link.
+const linkMomena = document.querySelector (".link_high");
+const momenaImage = document.querySelector (".momena_img");
+
+linkMomena.addEventListener ("click", () => {
+    clickContainer.style.opacity = "1";
+    clickContainer.style.pointerEvents = "all";
+    backButton.style.transform = "translateX(0)";
+    safayetImage.style.opacity = "0";
+    collegeImage.style.opacity = "0";
+    momenaImage.style.opacity = "1";
 });
 
 //Nav indicator moving according to the click.
