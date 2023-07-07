@@ -29,29 +29,10 @@
 
 @media (min-width: 600px) {
     .container {
-        transform: scale(2.5);
-        margin-top: 15em;
+        transform: scale(1.9);
+        margin-top: 27em;
     }
     .images {
         width: 600px;
-    }
-}
-@media (min-width: 700px) {
-    .container {
-        transform: scale(1.1);
-        margin-top: 15em;
-    }
-    .images {
-        width: 300px;
-    }
-}
-
-@media (min-width: 500px) {
-    .container {
-        transform: scale(1.8);
-        margin-top: 26em;
-    }
-    .images {
-        width: 500px;
     }
 }
