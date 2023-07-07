@@ -81,8 +81,8 @@ body {
 
 .click_container svg {
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 33px;
+    height: 33px;
     fill: var(--font-color);
     top: 2em;
     left: 2em;
@@ -99,6 +99,14 @@ body {
 }
 
 .college_img {
+    position: absolute;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    transition: transform 300ms;
+}
+
+.momena_img {
     position: absolute;
     width: 300px;
     border-radius: 10px;
@@ -273,8 +281,8 @@ body {
     position: absolute;
     top: 2em;
     right: 2em;
-    width: 18px;
-    height: 18px;
+    width: 22px;
+    height: 22px;
 }
 
 .light, .dark {
