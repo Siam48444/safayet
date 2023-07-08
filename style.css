@@ -43,7 +43,7 @@ body {
     background-color: var(--background-color);
     font-size: 62.5%;
     transition: background-color 500ms;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .container {
@@ -51,8 +51,9 @@ body {
     width: 25em;
     display: flex;
     flex-direction: column;
-    place-content: center;
-    gap: 1em;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.7em;
 }
 
 .basic_info {
@@ -81,7 +82,7 @@ body {
     left: 50%;
     right: 50%;
     transform: translateX(-50%);
-    border: var(--font-color) 1px solid;
+    border: var(--font-color) 0.5px solid;
     box-shadow: var(--box-shadow);
     cursor: pointer;
 }
@@ -101,8 +102,8 @@ body {
 
 .click_container svg {
     position: absolute;
-    width: 33px;
-    height: 33px;
+    width: 35px;
+    height: 35px;
     fill: var(--font-color);
     top: 2em;
     left: 2em;
