@@ -74,7 +74,7 @@ body {
 .dp {
     width: 90px;
     height: 90px;
-    background-image: url(images/safayet.jpg);
+    background-image: url(images/safayet.jp);
     background-size: cover;
     position: absolute;
     border-radius: 50%;
@@ -343,6 +343,7 @@ body {
     color: var(--font-color);
     font-size: 0.5rem;
     font-weight: 300;
+    position: relative;
 }
 
 .others a {
@@ -351,4 +352,6 @@ body {
     text-decoration: underline;
     color: var(--link-color);
     cursor: pointer;
+    position: absolute;
+    right: 0;
 }
