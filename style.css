@@ -82,9 +82,10 @@ body {
     left: 50%;
     right: 50%;
     transform: translateX(-50%);
-    border: var(--font-color) 0.5px solid;
+    border: var(--font-color) 0.3px solid;
     box-shadow: var(--box-shadow);
     cursor: pointer;
+    transition: border-color 300ms;
 }
 
 .click_container {
