@@ -279,7 +279,7 @@ body {
 .school_college > p {
     color: var(--font-color);
     font-size: 0.5rem;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .address {
@@ -322,5 +322,33 @@ body {
 .address p {
     color: var(--font-color);
     font-size: 0.5rem;
+    font-weight: 300;
+}
+
+.others {
+    padding: 1em 0.5em;
+    height: 13.3em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.others span {
+    color: var(--font-color);
+    font-size: 0.5rem;
+    font-weight: 600;
+}
+
+.others p {
+    color: var(--font-color);
+    font-size: 0.5rem;
+    font-weight: 300;
+}
+
+.others a {
+    font-size: 0.45rem;
     font-weight: 400;
+    text-decoration: underline;
+    color: var(--link-color);
+    cursor: pointer;
 }
