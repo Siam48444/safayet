@@ -132,6 +132,16 @@ const address1 = document.querySelector (".address1");
 const address2 = document.querySelector (".address2");
 const address3 = document.querySelector (".address3");
 const address4 = document.querySelector (".address4");
+const othersTexts = document.querySelectorAll (".others_texts");
+
+for(let i = 0; i < othersTexts.length; i++) {
+    dark.addEventListener ("click", () => {
+        othersTexts[i].style.color = "#f8f9fa";
+    });
+    light.addEventListener ("click", () => {
+        othersTexts[i].style.color = "#212529";
+    });
+}; 
 
 light.style.opacity = "0";
 light.style.pointerEvents = "none";
@@ -147,6 +157,7 @@ light.addEventListener ("click", () => {
     backButton.style.fill = "#212529";
     basicBox.style.backgroundColor = "#f8f9fa";
     moreBox.style.backgroundColor = "#f8f9fa";
+    dp.style.borderColor = "#212529";
 
     p1.style.color = ("#212529");
     p2.style.color = ("#212529");
@@ -188,6 +199,7 @@ dark.addEventListener ("click", () => {
     backButton.style.fill = "#f8f9fa";
     basicBox.style.backgroundColor = "#282c30";
     moreBox.style.backgroundColor = "#282c30";
+    dp.style.borderColor = "#f8f9fa";
     
     p1.style.color = ("#f8f9fa");
     p2.style.color = ("#f8f9fa");
